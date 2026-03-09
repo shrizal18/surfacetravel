@@ -1,6 +1,4 @@
-/* ============================================================
-   HIMALAYA JOURNEYS — script.js
-   ============================================================ */
+
 
 /* ── NAV: Sticky scroll effect ── */
 const navbar = document.getElementById('navbar');

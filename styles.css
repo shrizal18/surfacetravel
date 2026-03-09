@@ -26,6 +26,31 @@ body {
   overflow-x: hidden;
 }
 
+.whatsapp-btn{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 2000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn img{
+  width: 34px;
+  height: 34px;
+}
+
+.whatsapp-btn:hover{
+  transform: scale(1.1);
+}
+
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--navy); }
@@ -156,7 +181,7 @@ nav {
   position: absolute; inset: 0;
   background:
     linear-gradient(to bottom, rgba(10,22,40,0.3) 0%, rgba(10,22,40,0.1) 40%, rgba(10,22,40,0.7) 80%, rgba(10,22,40,1) 100%),
-    url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=1200&fit=crop') center/cover;
+    url('image/bg.png') center/cover;
   transform: scale(1.05);
   animation: heroZoom 20s ease-in-out infinite alternate;
 }
