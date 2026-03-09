@@ -34,7 +34,7 @@ body {
 /* ── TYPOGRAPHY ── */
 .serif { font-family: 'Cormorant Garamond', serif; }
 
-/*NAVIGATION */
+/* NAVIGATION */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   padding: 0 5%;
@@ -82,7 +82,7 @@ nav {
   height: 1px; background: var(--gold);
   transform: scaleX(0); transition: transform 0.3s ease;
 }
-.nav-links a:hover { color: var(--gold); }
+
 .nav-links a:hover::after { transform: scaleX(1); }
 
 .btn-book {
@@ -95,7 +95,14 @@ nav {
 .btn-book:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(200,147,63,0.5) !important; }
 .btn-book::after { display: none !important; }
 
-/* Mobile menu */
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.hamburger span { display: none; width: 24px; height: 2px; background: var(--white); transition: all 0.3s; border-radius: 2px; }
+
+.overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+  z-index: 998; display: none;
+}
+.overlay.show { display: block; }
 
 @media (max-width: 1024px) {
 
@@ -227,7 +234,7 @@ nav {
 }
 @keyframes scrollLine { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
 
-/*SHARED SECTION STYLES */
+/* SHARED SECTION STYLES */
 section { padding: 100px 5%; }
 
 .section-label {
