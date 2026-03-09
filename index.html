@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surface Nepal Tours and Travels</title>
+  <meta name="description" content="Discover Nepal with Surface Nepal Tours and Travels. Guided treks, cultural tours, and authentic Himalayan adventures.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="image/logo.png">
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo"><div class="nav-logo-icon">
+            <img src="image/logo.png" alt="logo" style="width:40px;height:40px;object-fit:contain">
+          </div>
+      <div class="nav-logo-text">
+        Surface Nepal Tours and Travels
+      </div>
+    </a>
+    <div class="desktop-menu">
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#tours">Tours</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="btn-book">Book Now</a></li>
+    </ul>
+  </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Overlay + Mobile Menu -->
+  <div class="overlay" id="overlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#tours">Tours</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="btn-book" style="display:inline-block;padding:12px 24px;">Book Now</a></li>
+    </ul>
+  </div>
+
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Premium Himalayan Expeditions</div>
+      <h1 class="hero-title serif">
+        Explore the<br><em>Beauty of Nepal</em>
+      </h1>
+      <p class="hero-sub">
+        Unforgettable adventures, guided tours, and authentic Himalayan experiences
+        crafted for the discerning traveler.
+      </p>
+      <div class="hero-btns">
+        <a href="#tours" class="btn-primary">View Tours →</a>
+        <a href="#contact" class="btn-outline">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+<!-- Destinations  -->
+
+  <section id="destinations">
+    <div class="section-header" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Popular Destinations</div>
+      <h2 class="section-title reveal" style="font-size:clamp(2rem,4vw,3.2rem)">
+        Discover Nepal's<br>Hidden Wonders
+      </h2>
+      <p class="section-sub reveal reveal-delay-1" style="margin:0 auto">
+        From the world's highest peaks to serene lakes and ancient temples
+      </p>
+    </div>
+
+    <div class="dest-grid">
+      <!-- Card 1 -->
+      <div class="dest-card reveal">
+        <img class="dest-img"
+          src="https://images.unsplash.com/photo-1540390769625-2fc3f8b1d50c?w=600&q=80"
+          alt="Everest Base Camp">
+        <div class="dest-overlay">
+          <span class="dest-tag">High Altitude</span>
+          <div class="dest-name serif">Everest Base Camp</div>
+          <div class="dest-desc">Trek to the foot of the world's highest mountain through dramatic Sherpa villages.</div>
+          <a href="#tours" class="dest-btn">Explore ↗</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="dest-card reveal reveal-delay-1">
+        <img class="dest-img"
+          src="image/para.png"
+          alt="Pokhara">
+        <div class="dest-overlay">
+          <span class="dest-tag">Adventure Hub</span>
+          <div class="dest-name serif">Pokhara</div>
+          <div class="dest-desc">Nepal's adventure capital with Phewa Lake and Annapurna panoramas.</div>
+          <a href="#tours" class="dest-btn">Explore ↗</a>
+        </div>
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="dest-card reveal reveal-delay-2">
+        <img class="dest-img"
+          src="image/temp.jpg"
+          alt="Pashupatinath Temple">
+        <div class="dest-overlay">
+          <span class="dest-tag">UNESCO World Heritage Site</span>
+          <div class="dest-name serif">Pashupatinath Temple</div>
+          <div class="dest-desc">A sacred Hindu temple dedicated to Lord Shiva, located on the banks of the Bagmati River.</div>
+          <a href="#tours" class="dest-btn">Explore ↗</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="dest-card reveal reveal-delay-1">
+        <img class="dest-img"
+          src="image/illam.jpg"
+          alt="Illam">
+        <div class="dest-overlay">
+          <span class="dest-tag">Tea Gardens</span>
+          <div class="dest-name serif">Illam</div>
+          <div class="dest-desc">Ilam in Nepal is a scenic hill district famous for lush tea gardens, rolling hills, and peaceful landscapes.</div>
+          <a href="#tours" class="dest-btn">Explore ↗</a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="dest-card reveal reveal-delay-2">
+        <img class="dest-img"
+          src="image/elep.jpg"
+          alt="Chitwan">
+        <div class="dest-overlay">
+          <span class="dest-tag">Nature Reserve</span>
+          <div class="dest-name serif">Chitwan</div>
+          <div class="dest-desc">Chitwan National Park in Nepal offers wildlife safaris, lush forests, rivers, and diverse endangered species.</div>
+          <a href="#tours" class="dest-btn">Explore ↗</a>
+        </div>
+      </div>
+            <!-- Card 6 -->
+      <div class="dest-card reveal reveal-delay-1">
+        <img class="dest-img"
+          src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=600&q=80"
+          alt="Annapurna Circuit">
+        <div class="dest-overlay">
+          <span class="dest-tag">Classic Trek</span>
+          <div class="dest-name serif">Annapurna Circuit</div>
+          <div class="dest-desc">One of the world's greatest treks encircling the Annapurna massif.</div>
+          <a href="#tours" class="dest-btn">Explore ↗</a>
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="dest-card reveal reveal-delay-2">
+        <img class="dest-img"
+          src="image/nag.jpg"
+          alt="Nagarkot">
+        <div class="dest-overlay">
+          <span class="dest-tag">View Point</span>
+          <div class="dest-name serif">Nagarkot</div>
+          <div class="dest-desc">Situated at a height of 7000 feet above sea level, Nagarkot offers one of the best view points of Asia’s greatest mountains.</div>
+          <a href="#tours" class="dest-btn">Explore ↗</a>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="dest-card reveal reveal-delay-2">
+        <img class="dest-img"
+          src="image/bkt.jpg"
+          alt="Bhaktapur Durbar Square">
+        <div class="dest-overlay">
+          <span class="dest-tag">Ancient Architecture</span>
+          <div class="dest-name serif">Bhaktapur Durbar Square</div>
+          <div class="dest-desc">Bhaktapur Durbar Square in Nepal is a historic plaza showcasing stunning temples, palaces, and traditional Newari architecture.</div>
+          <a href="#tours" class="dest-btn">Explore ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--FEATURED TOURS-->
+  <section id="tours">
+    <div class="section-header" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Featured Tours</div>
+      <h2 class="section-title reveal">Our Signature<br>Tour Packages</h2>
+      <p class="section-sub reveal reveal-delay-1" style="margin:0 auto">
+        Meticulously crafted itineraries for every level of adventurer
+      </p>
+    </div>
+
+    <div class="tours-grid">
+      <!-- Tour 1 -->
+       <div class="tour-card reveal reveal-delay-3">
+        <div class="tour-img-wrap">
+          <img class="tour-img"
+            src="image/n2.jpg"
+            alt="Pokhara Tour">
+          <div class="tour-badge">Most Popular</div>
+        </div>
+        <div class="tour-body">
+          <div class="tour-name serif">Pokhara Tour</div>
+          <div class="tour-desc">Paragliding, kayaking, and boating with stunning Annapurna reflections on Phewa Lake.</div>
+          <a href="tel:+9779851074906" class="btn-book-tour">Book Now</a>
+        </div>
+      </div>
+      
+
+      <!-- Tour 2 -->
+      <div class="tour-card reveal reveal-delay-1">
+        <div class="tour-img-wrap">
+          <img class="tour-img"
+            src="image/n10.jpg"
+            alt="Upper Mustang Tour">
+          <div class="tour-badge">Most Popular</div>
+        </div>
+        <div class="tour-body">
+          <div class="tour-name serif">Upper Mustang</div>
+          <div class="tour-desc">Remote Himalayan desert region featuring ancient Tibetan culture, monasteries, and dramatic landscapes.</div>
+          <a href="tel:+9779851074906" class="btn-book-tour">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Tour 3 -->
+      <div class="tour-card reveal reveal-delay-2">
+        <div class="tour-img-wrap">
+          <img class="tour-img"
+            src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=600&q=80"
+            alt="Kathmandu Heritage Tour">
+        </div>
+        <div class="tour-body">
+          <div class="tour-name serif">Kathmandu Heritage Tour</div>
+          <div class="tour-desc">Explore the UNESCO World Heritage Sites of the Kathmandu Valley — temples, palaces, and living culture.</div>
+          <a href="tel:+9779851074906" class="btn-book-tour">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Tour 4 -->
+      <div class="tour-card reveal">
+        <div class="tour-img-wrap">
+          <img class="tour-img"
+            src="image/n11.jpg"
+            alt="Everest Base Camp Trek">
+          
+        </div>
+        <div class="tour-body">
+          <div class="tour-name serif">Reach Out for more</div>
+          <div class="tour-desc">Contact us to explore and book more exciting travel destinations and packages across Nepal.</div>
+          <a href="tel:+9779851074906" class="btn-book-tour">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--  WHY CHOOSE US -->
+  <section id="why">
+    <div class="section-header" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Why Choose Us</div>
+      <h2 class="section-title reveal">The Surface Nepal Tours and Travels<br>Difference</h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">🧭</div>
+        <div class="why-title serif">Expert Local Guides</div>
+        <div class="why-desc">Our guides are born in the mountains. They carry generations of knowledge, language, and deep cultural roots that no guidebook can offer.</div>
+      </div>
+
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon">🛡️</div>
+        <div class="why-title serif">Safe &amp; Reliable</div>
+        <div class="why-desc">20+ years of safety record. We carry comprehensive insurance, satellite phones, and emergency protocols on every expedition.</div>
+      </div>
+
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon">💰</div>
+        <div class="why-title serif">Best Price Guarantee</div>
+        <div class="why-desc">Find the same tour cheaper? We'll match it and offer an additional 5% discount. No hidden fees, ever.</div>
+      </div>
+
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-icon">✨</div>
+        <div class="why-title serif">Customized Journeys</div>
+        <div class="why-desc">Every traveler is unique. We build bespoke itineraries from private family treks to solo spiritual retreats.</div>
+      </div>
+      <div class="why-card reveal reveal-delay-4">
+        <div class="why-icon">🚔</div>
+        <div class="why-title serif">Vehicle Rental</div>
+        <div class="why-desc">We offer a wide range of vehicles for rent, from cars to buses, ensuring comfortable and reliable transportation for your travels.</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--  GALLERY -->
+  <section id="gallery">
+    <div class="section-header" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Gallery</div>
+      <h2 class="section-title reveal">A Glimpse of<br>the Himalayas</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <img src="image/n1.jpg">
+        <div class="gallery-overlay"><span></span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1">
+        <img src="image/n2.jpg">
+        <div class="gallery-overlay"><span></span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2">
+        <img src="image/n3.jpg">
+        <div class="gallery-overlay"><span></span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1">
+        <img src="image/n4.jpg" >
+        <div class="gallery-overlay"><span></span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2">
+        <img src="image/n5.jpg" >
+        <div class="gallery-overlay"><span></span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-3">
+        <img src="image/n6.jpg">
+        <div class="gallery-overlay"><span></span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1">
+        <img src="image/n7.jpg">
+        <div class="gallery-overlay"><span></span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2">
+        <img src="image/n8.jpg">
+        <div class="gallery-overlay"><span></span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div style="text-align:center; margin-bottom:60px">
+      <div class="section-label" style="justify-content:center">Testimonials</div>
+      <h2 class="section-title reveal">What Our Adventurers Say</h2>
+    </div>
+
+    <div class="testimonial-slider">
+      <div class="testimonial-track" id="testimonialTrack">
+
+        <!-- Slide 1 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote serif">
+            This was the most incredible trek of my life. Everything was perfectly organized —
+            from the acclimatization schedule to the warm teahouses. Our guide Pemba was extraordinary.
+          </div>
+          <div class="testimonial-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/100?img=47" alt="Sarah Mitchell">
+            <div class="author-info">
+              <div class="author-name">Sarah Mitchell</div>
+              <div class="author-origin">🇬🇧 London, UK — EBC Trek</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote serif">
+            Surface Nepal Tours and Travels turned my bucket list dream into reality. The Annapurna Circuit left me
+            speechless. I've already booked my return trip to Upper Mustang.
+          </div>
+          <div class="testimonial-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/100?img=33" alt="Marco Bianchi">
+            <div class="author-info">
+              <div class="author-name">Marco Bianchi</div>
+              <div class="author-origin">🇮🇹 Milan, Italy — Annapurna Circuit</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote serif">
+            We brought our teenage kids and it was a transformative family experience. The guides were
+            patient, knowledgeable, and made everyone feel safe and inspired.
+          </div>
+          <div class="testimonial-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/100?img=25" alt="Amy & David Chen">
+            <div class="author-info">
+              <div class="author-name">Amy &amp; David Chen</div>
+              <div class="author-origin">🇺🇸 San Francisco, USA — Kathmandu Tour</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /testimonial-track -->
+
+      <div class="slider-dots">
+        <div class="dot active" onclick="goToSlide(0)"></div>
+        <div class="dot"        onclick="goToSlide(1)"></div>
+        <div class="dot"        onclick="goToSlide(2)"></div>
+      </div>
+      <div class="slider-arrows">
+        <button class="arrow-btn" onclick="prevSlide()">←</button>
+        <button class="arrow-btn" onclick="nextSlide()">→</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!--  CONTACT -->
+  <section id="contact">
+    <div class="section-header" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Get in Touch</div>
+      <h2 class="section-title reveal">Book Your Package<br>Today</h2>
+      <p class="section-sub reveal reveal-delay-1" style="margin:0 auto">
+        Tell us your dream journey and we'll craft the perfect itinerary
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Form -->
+      <div class="contact-form reveal">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;margin-bottom:28px;font-weight:400">
+          Send a Message
+        </h3>
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input class="form-input" type="text" placeholder="Ram Bahadur">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input class="form-input" type="email" placeholder="ram.bahadur@gmail.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tour of Interest</label>
+          <input class="form-input" type="text" placeholder="e.g. Everest Base Camp Trek">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Your Message</label>
+          <textarea class="form-textarea"
+            placeholder="Tell us about your travel dates, group size, and any special requirements…"></textarea>
+        </div>
+        <button class="btn-submit">Send Message →</button>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info reveal reveal-delay-1">
+        <div class="contact-info-title serif"><h3>We'd love to hear from you</h3></div>
+        <p class="contact-info-text">
+          Our team of Nepal travel specialists are available to help you plan every detail.
+          Reach us anytime — we typically respond within 2 hours.
+        </p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-val"><a href="tel:+9779851074906">+977 9851074906</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-val"><a href="mailto:surface.pramod@gmail.com">surface.pramod@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <div class="contact-item-label">Office</div>
+              <div class="contact-item-val">Thamel, Kathmandu, Nepal</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">🕐</div>
+            <div>
+              <div class="contact-item-label">Hours</div>
+              <div class="contact-item-val">Sun–Fri: 8:00 AM – 6:00 PM NST</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-embed">
+          <iframe 
+            src="https://www.google.com/maps?q=27.7205925,85.3048561&hl=en&z=17&output=embed"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div>
+        <a href="#" class="nav-logo" style="display:inline-flex;margin-bottom:0">
+          <div class="nav-logo-icon">
+            <img src="image/logo.png" alt="logo" style="width:40px;height:40px;object-fit:contain">
+          </div>
+          <div class="nav-logo-text">Surface Nepal Tours and Travels<span>Nepal</span></div>
+        </a>
+        <p class="footer-brand-desc">
+          Born in the Himalayas, sharing Nepal's extraordinary beauty with travelers from around
+          the world. Sustainable, authentic, unforgettable.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Facebook">f</a>
+          <a href="#" class="social-link" title="Instagram">◉</a>
+          <a href="#" class="social-link" title="Twitter">𝕏</a>
+          <a href="#" class="social-link" title="YouTube">▶</a>
+          <a href="#" class="social-link" title="TripAdvisor">✦</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Popular Tours -->
+      <div>
+        <div class="footer-col-title">Popular Tours</div>
+        <ul class="footer-links">
+          <li><a href="#tours">Upper Mustang</a></li>
+          <li><a href="#tours">Pokhara Adventure</a></li>
+          <li><a href="#tours">Annapurna Circuit</a></li>
+          <li><a href="#tours">Langtang Valley</a></li>
+          <li><a href="#tours">Kathmandu Heritage</a></li>
+          
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-links">
+          <li><a href="#">Naya Bazaar, Kathmandu, Nepal</a></li>
+          <li><a href="tel:+9779851074906">+977 9851074906</a></li>
+          <li><a href="mailto:surface.pramod@gmail.com">surface.pramod@gmail.com</a></li>
+          <li><a href="#">Sun–Fri: 8AM – 6PM NST</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Surface Nepal Tours and Travels.</div>
+    </div>
+  </footer>
+
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
